@@ -1,0 +1,76 @@
+<! DOCTYPE html>
+<html>
+<head>
+  <title>mylogin</title>
+  <style type="text/css"> 
+  body{
+       background: url("150553.jpg") no-repeat;
+  background-origin: content-box;font-family: arial;
+}
+form{top: 50%;left: 50%; transform: translate(-50%, -50%); background-color: #fff;
+    width: 350px; height: 400px;padding: 20px; position: absolute;
+}
+input[type="text"], input[name="password"] 
+{
+    background: #eee;padding: 10px; border: 1px solid #ccc; width: 250px;
+    border-radius: 4px;
+}
+input[type="submit"]{
+    padding: 10px;width: 270px;background: #d341c2;color: #fff;border: none;
+    border-radius: 3px;outline: none;cursor: pointer;
+}
+input[type="LOGIN"]:hover{
+    background-color: #69d644;
+}
+label{
+    float: left;margin-left: 55px ;
+}
+.fbtn{background: #fff;border: 2px solid #ccc;float: left;margin-left: 40px;
+border-radius: 10px;}
+.ggbtn{ background: #fff;border: 2px solid #ccc;float: left;margin-left: 120px;
+border-radius: 10px;
+}
+.img{
+    width: 60px;height: auto;padding: 2px;
+}
+    </style>
+</head>
+<body>
+  <center>
+    <form autocomplete="off"
+      <div>
+        <h1>LOGIN</h1>
+      </div><br>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+
+      <div>
+        <input type="Submit" name="Submit" value="LOGIN"
+       onclick="display()"
+      </div>
+      <span>
+        <br><a href="#"> Or login with</a>
+     </span>
+      <div>
+        <button class="fbtn">
+            <img class="img" src="fb1.png">
+        </button>
+        <button class="ggbtn">
+            <img  class="img" src="gg2.jpg"></button></div>
+        </button><br><a href="#"><br><br> Not a member? Sign up now</a>
+    </form>
+    <script>
+      function display() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        alert("Username: " + username + "\nPassword: " + password);
+      }
+    </script>
+  </body></center>
+
+  </body>
+</body>
+</html>
